@@ -4,6 +4,9 @@ on:
   pull_request:
     branches: main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,7 +29,7 @@ jobs:
           base64 -d <<< "$KEYSTORE_BASE64" > $HOME/keystore.jks
         env:
           KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
-          
+
       - name: Build Artifact
         run: |
           chmod +x ./gradlew
@@ -43,5 +46,5 @@ jobs:
 
       - uses: actions/upload-artifact@main
         with:
-          name: VencordDev
+          name: MooncordDev
           path: app/build/outputs/apk/release/app-release.apk

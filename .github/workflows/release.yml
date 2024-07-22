@@ -4,6 +4,9 @@ on:
     tags:
       - v*
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,7 +34,7 @@ jobs:
         id: release_values
         run: |
           echo "release_tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
-          
+
       - name: Build Release
         run: |
           chmod +x ./gradlew
@@ -41,8 +44,8 @@ jobs:
             -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
             -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
           
-          mv app/build/outputs/apk/release/app-release.apk Vencord-$TAG.apk
-          gh release create $TAG --generate-notes --title "Vencord $TAG" Vencord-$TAG.apk
+          mv app/build/outputs/apk/release/app-release.apk Mooncord-$TAG.apk
+          gh release create $TAG --generate-notes --title "Mooncord $TAG" Mooncord-$TAG.apk
         env:
           TAG: ${{ env.release_tag }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
