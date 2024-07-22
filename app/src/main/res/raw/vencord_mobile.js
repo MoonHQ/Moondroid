@@ -39,7 +39,7 @@
         Object.assign(document.createElement("link"), {
             rel: "stylesheet",
             type: "text/css",
-            href: "https://github.com/Vendicated/Vencord/releases/download/devbuild/browser.css"
+            href: "https://github.com/MoonHQ/Mooncord/releases/download/devbuild/browser.css"
         })
     ), { once: true });
 })();

@@ -1,5 +1,5 @@
-package dev.vendicated.vencord;
+package dev.moonhq.moondroid;
 
 public class Constants {
-    public static final String JS_BUNDLE_URL = "https://github.com/Vendicated/Vencord/releases/download/devbuild/browser.js";
+    public static final String JS_BUNDLE_URL = "https://github.com/MoonHQ/Mooncord/releases/download/devbuild/browser.js";
 }

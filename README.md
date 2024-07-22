@@ -1,17 +1,11 @@
-# Vendroid
+# Moondroid
 
-Vendroid is a custom Discord client for Android. The way it works is that it loads the discord.com website and injects Vencord.
+Moondroid is a fork of [Vendroid](https://github.com/Vencord/Vendroid) but using [Mooncord](https://github.com/MoonHQ/Mooncord).
 
-| | |
-|:--:|:--:|
-|![image](https://github.com/Vencord/Vendroid/assets/45497981/e6464167-78b1-4f38-8e96-bb355ea5bbc3)|![image](https://github.com/Vencord/Vendroid/assets/45497981/3f6b278e-f18d-4cae-964f-f357f06ca2bd)|
+## Should I use this?
 
+No. Use the actual discord app or some other client mod, like [Aliucord](https://github.com/Aliucord/Aliucord) or [Bunny](https://github.com/pyoncord/Bunny).
 
+## How to download?
 
-Discord's mobile site is not very usable since it has many issues. As such, this is mostly just a proof of concept and is not actively worked on.
-
-You are likely better off using [Aliucord](https://github.com/Aliucord/Aliucord) or [Vendetta](https://github.com/vendetta-mod/Vendetta), that are proper mods of the old and new Discord Android app respectively
-
-## Download
-
-Visit the [latest release](https://github.com/Vencord/Vendroid/releases/latest), grab the apk and install it
+Visit the [latest release](https://github.com/MoonHQ/Moondroid/releases/latest), grab the apk and install it.

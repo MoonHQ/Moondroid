@@ -1,4 +1,4 @@
-package dev.vendicated.vencord;
+package dev.moonhq.moondroid;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
